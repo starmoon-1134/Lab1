@@ -5,6 +5,8 @@ public class Node {
 	public Node next;
 	public Graph_vertex link_vertex;
 
+
+	dsds
 	public Node(Node next, Graph_vertex link_vertex) {
 		weight = 1;
 		this.next = next;
