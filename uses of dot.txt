@@ -1,1 +1,1 @@
-D:\graphviz\release\bin\dot.exe D:\Java\project\Pair_txt\graph.dot -T jpg -o D:\Java\project\Pair_txt\graph.jpg
+﻿D:\graphviz\release\bin\dot.exe D:\Java\project\Pair_txt\graph.dot -T jpg -o D:\Java\project\Pair_txt\graph.jpg
