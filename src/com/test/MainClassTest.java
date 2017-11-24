@@ -1,4 +1,4 @@
-package com.pair;
+package com.test;
 
 import static org.junit.Assert.assertEquals;
 
@@ -11,13 +11,16 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
+import com.pair.DirectedGraph;
+import com.pair.Graph_vertex;
+
 @RunWith(
   value = Parameterized.class)
 public class MainClassTest {
   private String word1;
   private String word2;
   private String retString;
-  private Hashtable<String, Graph_vertex> g = MainClass.createDirectedGraph("test.txt");
+  private Hashtable<String, Graph_vertex> g = DirectedGraph.createDirectedGraph("test.txt");
 
   public MainClassTest(String word1, String word2, String retString)
   {
@@ -42,7 +45,7 @@ public class MainClassTest {
 
   @Test
   public void test() {
-    assertEquals(retString, MainClass.queryBridgeWords(g, word1, word2));
+    assertEquals(retString, DirectedGraph.queryBridgeWords(g, word1, word2));
   }
 
 }
